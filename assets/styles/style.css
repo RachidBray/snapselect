@@ -1,0 +1,54 @@
+/* TODO: This CSS rule can be deprecated when shadow opacity control is implemented
+* Reduce Shadow opacity
+*/
+span.shadow-lg,
+div.shadow-lg {
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+span.shadow,
+div.shadow {
+	box-shadow: 0 0.125rem 0.5rem -0.25rem rgba(31, 27, 45, 0.08), 0 0.25rem 1rem rgba(31, 27, 45, 0.08) !important;
+}
+
+/* TODO: The automatic addition of the bg-white class to category icon links is unintended and should be avoided.
+* This CSS rule can be deprecated when issues is fixed.
+*/
+.gd-cptcat-cat-left.bg-white {
+	background-color: transparent !important;
+}
+
+/* TODO: I implemented this CSS rule to darken the logo on a light background.
+* On scroll
+*/
+.color-scheme-flip-on-scroll.navbar-light .navbar-brand img {
+	filter: brightness(20%);
+}
+
+/* TODO: This CSS rule can be deprecated when border color control is implemented
+* Set border color for form inputs 
+*/
+.form-control:not(.submit) {
+	border-color: #e6e5e8;
+}
+
+/* Enhance the user experience of the near location dropdown menu with better spacing. */
+.dropdown-menu .gdlmls-near {
+	padding: 20px !important;
+}
+
+/* @todo: Due to limitations in controlling border radius for specific elements such as categories and locations, I introduced CSS overrides to achieve the desired corner rounding.
+* This CSS rule can be deprecated when border radius control is implemented
+*/
+.btn :not(.rounded-end) {
+	--bs-btn-border-radius: 1.875rem !important;
+}
+
+.card {
+	--bs-card-border-radius: 1.875rem !important;
+	--bs-card-inner-border-radius: calc(1.875rem - 1px) !important;
+}
+
+body {
+  overflow-y: scroll !important;
+}
